@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Services from "../pages/Services";
 import Contact from "../pages/Contact";
+import Career from "../pages/Career";
 
 // 🔴 IMPORT PAGES (NOT SECTIONS)
 import SapServices from "../pages/SapServices";
@@ -24,6 +25,7 @@ export default function AppRoutes() {
       <Route path="/services/erp" element={<ErpServices />} />
 
       <Route path="/contact" element={<Contact />} />
+      <Route path="/career" element={<Career />} />
     </Routes>
   );
 }

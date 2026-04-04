@@ -91,6 +91,11 @@ export default function Footer() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link to="/career" className="hover:text-orange-400 transition">
+                Career
+              </Link>
+            </li>
           </ul>
         </div>
 

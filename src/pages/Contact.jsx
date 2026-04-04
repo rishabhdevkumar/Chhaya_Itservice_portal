@@ -1,7 +1,7 @@
 import React from "react";
 import ContactSection from "../sections/ContactSection";
 
-export default function About() {
+export default function Contact() {
   return (
     <>
       <ContactSection/>

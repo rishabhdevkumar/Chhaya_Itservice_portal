@@ -147,6 +147,12 @@ export default function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/career" className={({ isActive }) => `${baseLink} ${isActive ? activeLink : ""}`}>
+                Career 
+              </NavLink>
+            </li>
+           
           </ul>
 
           {/* MOBILE BUTTON */}
@@ -214,6 +220,9 @@ export default function Navbar() {
 
                 <NavLink to="/contact" onClick={() => setMobileOpen(false)} className="hover:text-blue-400">
                   Contact
+                </NavLink>
+                 <NavLink to="/career" onClick={() => setMobileOpen(false)} className="hover:text-blue-400">
+                  Career
                 </NavLink>
               </div>
 
