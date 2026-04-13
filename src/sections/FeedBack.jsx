@@ -7,7 +7,7 @@ import user2 from "../assets/images/user2.webp";
 import user3 from "../assets/images/user3.webp";
 import user4 from "../assets/images/user4.webp";
 import user5 from "../assets/images/user5.webp";
-import user6 from "../assets/images/Sanjay.jpeg";
+import user6 from "../assets/images/Sanjay.webp";
 import feedbackBg from "../assets/images/feedbackBg.webp";
 
 const feedbacks = [
@@ -58,8 +58,8 @@ const feedbacks = [
     profession: "IT Head, KR Papers",
     image: user6,
     feedback: "Working with chhaya it services was seamless and highly professional experience.They carefully analyzed our requirements and proposed scalable solutions. The solution helped optimize workflow and improve overall productivity.",
-    },
-  ];
+  },
+];
 
 export default function Feedback() {
   const [active, setActive] = useState(feedbacks[0]);
@@ -75,18 +75,18 @@ export default function Feedback() {
   }, []);
 
   return (
-    <section className="relative py-24 min-h-[600px] lg:min-h-[700px] shadow-[0_-20px_40px_rgba(0,0,0,0.04)]">
-      <img
-        src={feedbackBg}
-        alt="Feedback Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+    <section className="relative py-24 min-h-[600px] lg:min-h-[700px] shadow-[0_-20px_40px_rgba(0,0,0,0.04)] overflow-hidden">
+      {/* FIXED BACKGROUND */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-40"
+        style={{ backgroundImage: `url(${feedbackBg})` }}
+      ></div>
 
       {/* Overlay */}
       <div className="absolute inset-0 z-0 "></div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 
         {/* LEFT FEEDBACK */}
         <div className="min-h-[400px] flex flex-col justify-center">
@@ -133,16 +133,16 @@ export default function Feedback() {
         {/* RIGHT IMAGE GROUP */}
         <div className="relative flex items-center justify-center lg:justify-end">
 
-          <div className="relative w-[360px] h-[360px] md:w-[400px] md:h-[400px] flex items-center justify-center">
+          <div className="relative w-[380px] h-[380px] md:w-[450px] md:h-[450px] flex items-center justify-center">
 
             {/* MAIN IMAGE */}
-            <div className="relative z-10 w-72 h-72 md:w-80 md:h-80 rounded-full">
+            <div className="relative z-10 w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={active.id}
                   src={active.image}
                   alt={active.name}
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-full h-full object-contain"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
@@ -194,7 +194,7 @@ export default function Feedback() {
               ].map((item, i) => (
                 <motion.div
                   key={i}
-                  className="flex flex-col items-center bg-white/90 p-4 rounded-2xl shadow-lg w-36"
+                  className="flex flex-col items-center bg-white/90 p-4 shadow-lg w-36"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 * i, duration: 0.6 }}
