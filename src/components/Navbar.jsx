@@ -30,10 +30,12 @@ export default function Navbar() {
   const isServiceActive = location.pathname.startsWith("/services");
 
   const services = [
-    { name: "SAP Services", path: "/services/sap" },
-    { name: "Web-based business solution", path: "/services/erp" },
-    { name: "Staffing services", path: "/services/web-development" },
-  ];
+  { name: "SAP Services", path: "/services/sap" },
+  { name: "Web-based Business Solution", path: "/services/web-based-business-solution" },
+  { name: "Staffing Services", path: "/services/staffing-services" },
+];
+
+
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 30);

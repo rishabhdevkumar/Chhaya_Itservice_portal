@@ -21,8 +21,9 @@ export default function AppRoutes() {
 
       <Route path="/services" element={<Services />} />
       <Route path="/services/sap" element={<SapServices />} />
-      <Route path="/services/web-development" element={<WebServices />} />
-      <Route path="/services/erp" element={<ErpServices />} />
+<Route path="/services/web-based-business-solution" element={<ErpServices />} />
+<Route path="/services/staffing-services" element={<WebServices />} />
+
 
       <Route path="/contact" element={<Contact />} />
       <Route path="/career" element={<Career />} />

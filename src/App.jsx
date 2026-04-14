@@ -8,9 +8,13 @@
     return (
       <>
         <Navbar />
-        <ScrollToTop/>
+        <ScrollToTop/>  
         <AppRoutes />
         <Footer/>
       </>
     )
   }
+
+
+
+  
