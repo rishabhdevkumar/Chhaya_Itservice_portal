@@ -14,7 +14,7 @@ import {
   Briefcase,
   Users,
 } from "lucide-react";
-const COMPANY_EMAIL = "partha.basack@chhayaitservices.com";
+const COMPANY_EMAIL = "hr@chhayaitservices.com";
 
 const ContactSection = () => {
 
@@ -237,7 +237,7 @@ ${message}
   <div className="grid sm:grid-cols-2 gap-6">
     <div className="bg-[#020617] border border-slate-800 rounded-xl p-5 text-center hover:shadow-lg transition">
       <Phone className="text-indigo-400 mx-auto mb-2" />
-      <p>📞 +91 8789124115</p>
+      <p>📞 +91 9234604901</p>
       <p>📞 +91 9431133764</p>
     </div>
 

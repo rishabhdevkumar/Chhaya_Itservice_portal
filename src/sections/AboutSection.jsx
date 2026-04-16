@@ -25,16 +25,10 @@ export default function AboutSection() {
         to-slate-100
       "
     >
-<<<<<<< HEAD
       {/* TOP ACCENT LINE */}
      <div className="absolute top-0 left-0 w-full flex justify-center pointer-events-none">
   <div
     className="
-=======
-      <div className="absolute top-0 left-0 w-full flex justify-center pointer-events-none">
-        <div
-          className="
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
       h-[2px]
       w-32 sm:w-48 md:w-72 lg:w-96
       bg-gradient-to-r
@@ -43,17 +37,11 @@ export default function AboutSection() {
       to-transparent
       rounded-full
     "
-<<<<<<< HEAD
   />
 </div>
 
 
      
-=======
-        />
-      </div>
-
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
       <div
         className="
           max-w-7xl mx-auto px-4 lg:px-8
@@ -61,18 +49,12 @@ export default function AboutSection() {
           gap-16 lg:gap-20 items-center
         "
       >
-<<<<<<< HEAD
         {/* LEFT SECTION */}
         <div className="flex justify-center lg:justify-start relative">
           <div className="w-full max-w-[460px] relative">
             {/* IMAGE WRAPPER */}
             <div className="relative rounded-3xl bg-black shadow-xl p-4 sm:p-6">
               {/* IMAGE 1 */}
-=======
-        <div className="flex justify-center lg:justify-start relative">
-          <div className="w-full max-w-[460px] relative">
-            <div className="relative rounded-3xl bg-black shadow-xl p-4 sm:p-6">
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
               <motion.img
                 src={cardBg1}
                 alt="About company"
@@ -86,10 +68,7 @@ export default function AboutSection() {
                 transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
               />
 
-<<<<<<< HEAD
               {/* IMAGE 2 */}
-=======
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
               <motion.img
                 src={cardBg2}
                 alt="SAP solutions"

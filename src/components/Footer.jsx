@@ -127,17 +127,17 @@ export default function Footer() {
           </p>
 
           <p className="text-sm text-gray-300">
-            📞 +91 8789124115
+            📞 +91 9234604901
           </p>
           <p className="text-sm text-gray-300 mb-2">
             📞 +91 9431133764
           </p>
 
           <a
-            href="mailto:partha.basack@chhayaitservices.com"
+            href="mailto:hr@chhayaitservices.com"
             className="text-sm text-gray-300 hover:text-orange-400 transition"
           >
-            ✉️ partha.basack@chhayaitservices.com
+            ✉️ hr@chhayaitservices.com
           </a>
         </div>
       </div>

@@ -4,13 +4,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: process.env.NODE_ENV === "production"
-<<<<<<< HEAD
-  ? "/"
-=======
-  ? "/chhayaitservices/"
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
-  : "/",
-
+    ? "/devchhayaitservices/"
+    : "/",
 
   build: {
     rollupOptions: {
@@ -22,9 +17,6 @@ export default defineConfig({
     },
   },
 });
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf

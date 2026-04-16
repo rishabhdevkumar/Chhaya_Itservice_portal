@@ -76,7 +76,6 @@
 .animate-floatSlower {
   animation: floatSlower 18s ease-in-out infinite;
 }
-<<<<<<< HEAD
 
 
   @keyframes clientScroll {
@@ -92,5 +91,3 @@
   animation: clientScroll 20s linear infinite;
 }
 
-=======
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf

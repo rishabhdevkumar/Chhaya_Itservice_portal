@@ -8,20 +8,13 @@
     return (
       <>
         <Navbar />
-<<<<<<< HEAD
         <ScrollToTop/>  
-=======
-        <ScrollToTop/>
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
         <AppRoutes />
         <Footer/>
       </>
     )
   }
-<<<<<<< HEAD
 
 
 
   
-=======
->>>>>>> 02fa17f55e5fc18a93b6a0624cbee042c407bacf
