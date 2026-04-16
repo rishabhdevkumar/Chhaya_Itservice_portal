@@ -76,3 +76,18 @@
 .animate-floatSlower {
   animation: floatSlower 18s ease-in-out infinite;
 }
+
+
+  @keyframes clientScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-clientScroll {
+  animation: clientScroll 20s linear infinite;
+}
+

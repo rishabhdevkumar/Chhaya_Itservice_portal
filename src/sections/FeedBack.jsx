@@ -2,54 +2,54 @@ import React, { useState, useEffect } from "react";
 import { FaQuoteLeft, FaStar, FaMapMarkerAlt } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
-import user1 from "../assets/images/user1.webp";
-import user2 from "../assets/images/user2.webp";
-import user3 from "../assets/images/user3.webp";
-import user4 from "../assets/images/user4.webp";
-import user5 from "../assets/images/user5.webp";
+import user1 from "../assets/images/sanjay.webp";
+import user2 from "../assets/images/client2new.jpeg";
+// import user3 from "../assets/images/user3.webp";
+// import user4 from "../assets/images/user4.webp";
+// import user5 from "../assets/images/user5.webp";
 import feedbackBg from "../assets/images/feedbackBg.webp";
 
 const feedbacks = [
   {
     id: 1,
-    name: "Rahul Mehta",
-    location: "Mumbai, India",
+    name: "Sanjay Kumar Panthangi (	IT Head)",
+    location: "KR Papers (Shahjahanpur , UP)",
     image: user1,
     feedback:
-      "The SAP solutions delivered by the team exceeded our expectations in every aspect. Their consultants demonstrated a deep understanding of our business processes and challenges. The project execution was well-structured, transparent, and aligned with our enterprise goals. Communication throughout the engagement was clear and proactive. Timelines were strictly adhered to without compromising quality. The implementation significantly improved operational efficiency and reporting accuracy. We truly value their professionalism and long-term support commitment.",
+"Working with chhaya it services was seamless and highly professional experience. They carefully analyzed our requirements and proposed scalable solutions. The solution helped optimize workflow and improve overall productivity. Their team maintained clear communication throughout the project and ensured timely delivery of every milestone. They showed strong attention to detail and a deep understanding of our business needs. Overall, the collaboration resulted in a smooth process and long-term value for our organization."
+
   },
   {
     id: 2,
-    name: "Anita Sharma",
-    location: "Delhi, India",
+    name: "Satyaprakash Yadav(Manager IT )",
+    location: "KR Papers (Shahjahanpur , UP)",
     image: user2,
     feedback:
-      "Working with this SAP consulting team was a seamless and highly professional experience. They carefully analyzed our requirements and proposed scalable solutions aligned with future growth. The consultants were knowledgeable, responsive, and solution-oriented. Project milestones were clearly defined and consistently met. Their collaborative approach made the transition smooth for our internal teams. Post-implementation support was prompt and reliable. We confidently recommend their services to enterprise clients.",
-  },
-  {
-    id: 3,
-    name: "David Wilson",
-    location: "London, UK",
-    image: user3,
-    feedback:
-      "The team showcased exceptional expertise in SAP implementation and enterprise transformation. From initial planning to final deployment, every phase was executed with precision. Their structured methodology ensured minimal disruption to ongoing operations. The consultants provided valuable insights that enhanced our reporting and decision-making capabilities. Communication remained transparent throughout the project lifecycle. The solution delivered measurable performance improvements. Their professionalism and commitment to quality truly stand out.",
-  },
-  {
-    id: 4,
-    name: "Neha Kapoor",
-    location: "Bengaluru, India",
-    image: user4,
-    feedback:
-      "This team proved to be a highly reliable SAP consulting partner. They demonstrated strong technical knowledge and a clear understanding of complex business processes. The project was managed efficiently with consistent progress tracking. Their consultants were proactive in identifying potential risks and resolving issues early. The implementation was delivered on schedule with high quality standards. Ongoing support has been prompt and dependable. We appreciate their attention to detail and customer-focused approach.",
-  },
-  {
-    id: 5,
-    name: "Michael Brown",
-    location: "New York, USA",
-    image: user5,
-    feedback:
-      "The quality of service and SAP expertise provided was exceptional. The team took the time to understand our operational challenges and tailored solutions accordingly. Their structured execution approach ensured clarity and alignment at every stage. Communication was transparent and timely throughout the engagement. The solution helped optimize workflows and improve overall productivity. Deliverables were completed within agreed timelines. We value their professionalism, accountability, and technical excellence.",
-  },
+"The team showcased exceptional expertise in PS and enterprise transformation through digitalization of shopfloor data. from initial planning to final deployment, every phase was excuted with precision. The consultants were responsive and solution-oriented. Their structured approach ensured smooth coordination across all stages of the project. They demonstrated strong problem-solving skills and adapted quickly to evolving requirements. Overall, the implementation delivered measurable improvements and long-term operational value."  },
+  // {
+  //   id: 3,
+  //   name: "David Wilson",
+  //   location: "London, UK",
+  //   image: user3,
+  //   feedback:
+  //     "The team showcased exceptional expertise in SAP implementation and enterprise transformation. From initial planning to final deployment, every phase was executed with precision. Their structured methodology ensured minimal disruption to ongoing operations. The consultants provided valuable insights that enhanced our reporting and decision-making capabilities. Communication remained transparent throughout the project lifecycle. The solution delivered measurable performance improvements. Their professionalism and commitment to quality truly stand out.",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Neha Kapoor",
+  //   location: "Bengaluru, India",
+  //   image: user4,
+  //   feedback:
+  //     "This team proved to be a highly reliable SAP consulting partner. They demonstrated strong technical knowledge and a clear understanding of complex business processes. The project was managed efficiently with consistent progress tracking. Their consultants were proactive in identifying potential risks and resolving issues early. The implementation was delivered on schedule with high quality standards. Ongoing support has been prompt and dependable. We appreciate their attention to detail and customer-focused approach.",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Michael Brown",
+  //   location: "New York, USA",
+  //   image: user5,
+  //   feedback:
+  //     "The quality of service and SAP expertise provided was exceptional. The team took the time to understand our operational challenges and tailored solutions accordingly. Their structured execution approach ensured clarity and alignment at every stage. Communication was transparent and timely throughout the engagement. The solution helped optimize workflows and improve overall productivity. Deliverables were completed within agreed timelines. We value their professionalism, accountability, and technical excellence.",
+  // },
 ];
 
 export default function Feedback() {
@@ -62,7 +62,7 @@ export default function Feedback() {
         const nextIndex = (feedbacks.findIndex((f) => f.id === prev.id) + 1) % feedbacks.length;
         return feedbacks[nextIndex];
       });
-    }, 3000);
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
@@ -87,7 +87,7 @@ export default function Feedback() {
             Our Feedback
           </p>
           <h2 className="mt-6 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-            Trusted by Clients <br /> Across the Globe
+            Trusted by Clients <br /> 
           </h2>
           <div className="mt-10 bg-gray-50 bg-opacity-90 p-8 rounded-2xl border border-gray-100 shadow-sm min-h-[350px]">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
@@ -97,22 +97,22 @@ export default function Feedback() {
               ))}
             </div>
             {/* Fixed-height feedback container to prevent layout jump */}
-<div className="relative min-h-[220px] md:min-h-[260px] overflow-hidden">
+            <div className="relative min-h-[220px] md:min-h-[260px] overflow-hidden">
 
-  <AnimatePresence mode="wait">
-    <motion.p
-      key={active.id}
-      className="absolute inset-0 text-gray-600 leading-relaxed"
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -12 }}
-      transition={{ duration: 0.45, ease: "easeInOut" }}
-    >
-      {active.feedback}
-    </motion.p>
-  </AnimatePresence>
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={active.id}
+                  className="absolute inset-0 text-gray-600 leading-relaxed"
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -12 }}
+                  transition={{ duration: 0.45, ease: "easeInOut" }}
+                >
+                  {active.feedback}
+                </motion.p>
+              </AnimatePresence>
 
-</div>
+            </div>
 
             <div className="mt-6">
               <p className="font-semibold text-gray-900">{active.name}</p>
@@ -156,16 +156,14 @@ export default function Feedback() {
                   style={{
                     transform: `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`,
                   }}
-                  className={`absolute z-20 w-14 h-14 rounded-full transition-all duration-300 ${
-                    active.id === item.id
+                  className={`absolute z-20 w-14 h-14 rounded-full transition-all duration-300 ${active.id === item.id
                       ? "scale-110 shadow-[0_0_20px_rgba(249,115,22,0.55)]"
                       : "opacity-85 hover:opacity-100"
-                  }`}
+                    }`}
                 >
                   <div
-                    className={`w-full h-full rounded-full ${
-                      active.id === item.id ? "bg-orange-500 p-[3px]" : "bg-white p-[2px] shadow-md"
-                    }`}
+                    className={`w-full h-full rounded-full ${active.id === item.id ? "bg-orange-500 p-[3px]" : "bg-white p-[2px] shadow-md"
+                      }`}
                   >
                     <img
                       src={item.image}
@@ -183,25 +181,25 @@ export default function Feedback() {
   hidden lg:flex
   flex-col md:flex-row items-center gap-6 z-10
 ">
-  {[
-    { icon: "⭐", text: "100% Client Satisfaction" },
-    { icon: "💼", text: "Professional SAP Services" },
-    { icon: "📈", text: "Optimized Operations" },
-  ].map((item, i) => (
-    <motion.div
-      key={i}
-      className="flex flex-col items-center bg-white/90 p-4 rounded-2xl shadow-lg w-36"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 * i, duration: 0.6 }}
-    >
-      <div className="text-orange-500 text-3xl mb-2">{item.icon}</div>
-      <p className="text-gray-700 font-semibold text-center text-sm">
-        {item.text}
-      </p>
-    </motion.div>
-  ))}
-</div>
+              {[
+                { icon: "⭐", text: "100% Client Satisfaction" },
+                { icon: "💼", text: "Professional SAP Services" },
+                { icon: "📈", text: "Optimized Operations" },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  className="flex flex-col items-center bg-white/90 p-4 rounded-2xl shadow-lg w-36"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 * i, duration: 0.6 }}
+                >
+                  <div className="text-orange-500 text-3xl mb-2">{item.icon}</div>
+                  <p className="text-gray-700 font-semibold text-center text-sm">
+                    {item.text}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
 
           </div>
         </div>
